@@ -19,9 +19,9 @@ fi
 function build_pkg() {
     local PN=$1
     local ARCH=
-    if [ -n "$2" ]; then
-	ARCH="-a $2"
-    fi
+    # if [ -n "$2" ]; then
+    # 	ARCH="-a $2"
+    # fi
     local BUILD_DIR=build/$PN-$PV
     rm -rf $BUILD_DIR
     mkdir -p $BUILD_DIR
